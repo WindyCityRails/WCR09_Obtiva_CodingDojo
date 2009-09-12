@@ -3,11 +3,11 @@
 
 ## Dojo Rules:
 
-1. **Have Fun** - There’s no bosses, no clients and no deadlines here. There’s also no pressure to finish the problem. So, get as far as you can in the alotted time, and let someone else give it a try. 
+1. **Have Fun** - There’s no bosses, no clients and no deadlines here. There’s also no pressure to finish the problem. So, get as far as you can in the allotted time, and let someone else give it a try. 
 
 2. **Teamwork** - This computer has two keyboards and mice for a reason. Find a friend, or an interested stranger and try solving the problem together.
 
-3. **Practice** - The benefit of a Coding Dojo is the opportunity to practice the desciplines that lead to well-made software we can be proud of, such as:
+3. **Practice** - The benefit of a Coding Dojo is the opportunity to practice the disciplines that lead to well-made software we can be proud of, such as:
   - Test/Behavior-Driven Development
   - Design Patterns
   - Communication with your Pair

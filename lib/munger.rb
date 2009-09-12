@@ -1,7 +1,6 @@
 class String
   def munge
-    # split(/\b/).map(&:munge_word).join
-     split(/\b/).map { |wrd| wrd.munge_word }.join
+    split(/\b/).map(&:munge_word).join
    end
 
   protected

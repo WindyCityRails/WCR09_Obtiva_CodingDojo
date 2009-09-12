@@ -1,9 +1,14 @@
-Given /^BowlingSheet for (\w+)$/ do |player|
+Given /^a new game for (\w+)$/ do |player|
   @bowling_sheet = BowlingSheet.new(player)
 end
 
-Given /^no balls rolled$/ do
+When /^no balls are rolled$/ do
   # noop
+end
+
+When /^the rolls are (\d+), (\d+)$/ do |first, second|
+  @bowling_sheet.add_roll(first.to_i)
+  @bowling_sheet.add_roll(second.to_i)
 end
 
 Given /^the following Score$/ do |table|
@@ -11,7 +16,10 @@ Given /^the following Score$/ do |table|
   @bowling_sheet.scores = table.raw
 end
 
-Then /^BowlingSheet should look like$/ do |string|
+Then /^output should look like$/ do |string|
   @bowling_sheet.to_s.should == string
 end
 
+Then /^the score should be (\d+)$/ do |score|
+  @bowling_sheet.score.should == score.to_i
+end

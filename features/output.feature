@@ -4,9 +4,9 @@ Feature: Bowling Output
 	BolwingSheet-like format.
 
 	Scenario: Empty Score
-		Given BowlingSheet for John
-		And no balls rolled
-		Then BowlingSheet should look like
+		Given a new game for John
+		When no balls are rolled
+		Then output should look like
 		"""
 John's final score: 0
 
@@ -25,7 +25,7 @@ Frame     Roll  Roll    Score
 		"""
 	
 	Scenario: 
-		Given BowlingSheet for John
+		Given a new game for John
 		And the following Score
     	| 6 | 2 |   8 |
     	| 7 | 1 |  16 |
@@ -38,7 +38,7 @@ Frame     Roll  Roll    Score
     	| 7 | 2 | 122 |
     	| 5 | / | 140 |
     	| 8	|   |     |
-		Then BowlingSheet should look like
+		Then output should look like
 		"""
 John's final score: 140
 

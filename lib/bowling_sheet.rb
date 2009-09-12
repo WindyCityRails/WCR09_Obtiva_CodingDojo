@@ -6,8 +6,15 @@ class BowlingSheet
     @scores = []
   end
   
+  def score
+    @scores.inject(0) { |sum, pins| sum + pins }
+  end
+  
+  def add_roll(pins)
+    @scores << pins
+  end
+  
   def to_s
-    puts @scores.inspect
     final_score = @scores.empty? ? 0 : @scores.reverse.find {|s| !s[-1].nil?}[-1]
     output = "John's final score: #{final_score}\n"
     output << "\n"

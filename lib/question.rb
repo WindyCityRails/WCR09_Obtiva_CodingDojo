@@ -5,4 +5,7 @@ class Question
   
   attr_reader :text, :yes, :no
   
+  def no=()
+  end
+  
 end

@@ -11,6 +11,11 @@ describe String do
       "Four".munge_word[0].chr.should == "F"
       "Four".munge_word[-1].chr.should == 'r'
     end
+    
+    it "should not rearrange numbers" do
+      "123".munge_word.should == "123"
+      "1234567".munge_word.should == "1234567"
+    end
   end
   
   context "munge" do    

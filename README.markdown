@@ -31,5 +31,6 @@
 
   <pre>dojo --start_over</pre>
   
-  This will run some git magic to create a starter branch for your 
+  This will run some git magic to create a starter branch for your new attempt.
+  
 5. **Start coding!**

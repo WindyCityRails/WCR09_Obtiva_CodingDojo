@@ -8,8 +8,8 @@ describe String do
     end
 
     it "first and last letter should not change" do
-      "Four".munge_word[0].chr.should == "F"
-      "Four".munge_word[-1].chr.should == 'r'
+      "Four".munge[0].chr.should == "F"
+      "Four".munge[-1].chr.should == 'r'
     end
   end
   

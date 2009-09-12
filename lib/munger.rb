@@ -1,12 +1,17 @@
-
 class String
-  def munge_word
-    letters = self.split('')
-    first, last = letters.shift, letters.pop
-    [first, letters.sort_by { rand }, last].to_s
-  end
-  
   def munge
-    self.split(/\b/).map(&:munge_word).join
-  end
+    # split(/\b/).map(&:munge_word).join
+     split(/\b/).map { |wrd| wrd.munge_word }.join
+   end
+
+  protected
+    def scramble
+      split('').sort_by { rand }
+    end
+    
+    def munge_word
+      letters = split('')
+      first, last = letters.shift, letters.pop
+      [first, letters.join.scramble, last].to_s
+    end
 end

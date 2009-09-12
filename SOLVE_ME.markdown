@@ -13,7 +13,7 @@ Note the single column of space between digits in both examples below. For other
   % ruby lcd.rb 012345
    --        --   --        -- 
   |  |    |    |    | |  | |   
-  |  |    |    |    t| |  | |   
+  |  |    |    |    | |  | |   
              --   --   --   -- 
   |  |    | |       |    |    |
   |  |    | |       |    |    |

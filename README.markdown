@@ -29,22 +29,7 @@
 
 4.  **Determine your starting point** - If someone else was working on this problem before you sat down at the computer, you will want to continue wherever they left off. If the previous group solved the problem, you have two choices, re-factor their code into a better solution, or start over. To start over, run the following:
 
-  <pre>git branch</pre>
+  <pre>dojo --start_over</pre>
   
-  You will see a series of branch names starting with the belt color of the computer you're sitting at, like so:
-  
-  <pre>
-    yellow_start
-    yellow_1
-    yellow_2
-    yellow_3
-  </pre>
-  
-  You should checkout the "start" branch which contains the starter code for the problem on your machine, and create a new branch that is numbered one higher than the last attempt:
-  
-  <pre>
-    git checkout yellow_start
-    git checkout -b yellow_4
-  </pre>
-
+  This will run some git magic to create a starter branch for your 
 5. **Start coding!**
